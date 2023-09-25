@@ -37,7 +37,7 @@ class AuthController extends Controller
             'pw' => $request->password,
             'card_no' => $request->card_no,
             'mobile' => $request->mobile,
-            'role' => $request->card_no
+            'role' => $request->role
         ]);
 
         return response()->json([
