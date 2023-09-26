@@ -99,4 +99,15 @@ class AuthController extends Controller
         ], 200);
     }
 
+    public function user()
+    {
+        $user = Auth::user();
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Current Authenticated',
+            'data' => $user
+        ], 200);
+
+    }
+
 }
